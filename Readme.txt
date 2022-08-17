@@ -34,3 +34,9 @@ This is going to be used in out client
 
 6. The context folder is for connecting the blockchain (Controller)
 
+
+################## GIT COMMANDS ######################
+
+git add .
+git commit -m "message: X feature added"
+git push
