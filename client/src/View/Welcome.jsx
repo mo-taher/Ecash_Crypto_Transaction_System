@@ -49,7 +49,7 @@ const Welcome = () => {
                 <div className=" flex flex-1 justify-start  flex-col mf:mr-10">
                     
                     <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-                        Send Crypto <br /> all over the globe
+                        Transact Crypto <br /> all over the globe
                     </h1>
                     <p className = "text-left mt-5 text-white folt-light md:w-9/12 w-11/12 text-base">
 
@@ -66,7 +66,7 @@ const Welcome = () => {
                             className="flex flex-row justify-center items-center my-5 bg-[#FFCF00] p-3 rounded-full cursor-pointer hover:bg-[#d2d4bc]"
                             >
                             <p className="text-black text-base font-semibold">
-                                Connect Wallet
+                                Login / Connect Wallet
                             </p>
                         </button>
                     )}
@@ -77,11 +77,11 @@ const Welcome = () => {
                     <div className="grid sm:grid-cols-3 grid-cols-3 w-full mt-10">
                         
                          <div className= {`rounded-tl-2xl ${commonStyles}`} >
-                            Reliability
+                            Dependability
                         </div>
                         
                         <div className={commonStyles}>
-                            Security
+                            Web 3.0
                         </div>
                         
                         <div className={`sm:rounded-tr-2xl ${commonStyles}`}>
@@ -89,15 +89,16 @@ const Welcome = () => {
                         </div> 
                         
                         <div className={`sm:rounded-bl-2xl ${commonStyles}`}>
-                            Web 3.0
+                            
+                            Security
                         </div>
                         
                         <div className={commonStyles}>
-                            Low Fees
+                            Omtimal Fees
                         </div>
 
                         <div className={`sm:rounded-br-2xl ${commonStyles}`}>
-                            Blockchain
+                            Blockchain Technology
                         </div>     
                     </div>
                 </div>
@@ -108,26 +109,26 @@ const Welcome = () => {
                     <div className="p-3 flex justify-end items-start flex-col rounded-2xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism">
                         <div className="flex justify-between flex-col w-full h-full">
                             <div className="flex justify-between items-start">
-                                <div className="w-10 h-10 rounded-full border-2 border-[#FFCF00] flex justify-center items-center">
-                                    <SiEthereum fontSize={25} color="#FFCF00" />
+                                <div className="w-10 h-10 rounded-full border-2 border-[#080a33] flex justify-center items-center">
+                                    <SiEthereum fontSize={30} color="#080a33" />
                                 </div>
-                                <BsInfoCircle fontSize = {17} color = "#FFCF00" />
+                                <BsInfoCircle fontSize = {17} color = "#080a33" />
                             </div>
                             <div>
-                                <p className="text-white font-light text-sm">
-                                    Address
+                                <p className="text-blue  text-sm">
+                                    Wall-Address
                                 </p>
-                                <p className="text-white font-bold text-sm">
-                                    Ethereum
+                                <p className="text-blue font-bold text-sm">
+                                    Digital Crypto Card
                                 </p>
                             </div>
                         </div>
                     </div> 
                     <div className="p-5 sm:w-96 w-full flex flex-col justify-center blue-glassmorphism">
                         <Input placeholder = "Address To" name = "addressTo" type= "text"  handleChange = {handleChange} />
-                        <Input placeholder = "Amount (ETH)" name = "amount" type= "number" handleChange = {handleChange} />
-                        <Input placeholder = "Keyword (Gif)" name = "keyword" type= "text" handleChange = {handleChange} />
-                        <Input placeholder = "Enter Message" name = "message" type= "text" handleChange = {handleChange} />
+                        <Input placeholder = "Amount (Eth)" name = "amount" type= "number" handleChange = {handleChange} />
+                        <Input placeholder = "Subject (Txt)" name = "keyword" type= "text" handleChange = {handleChange} />
+                        <Input placeholder = "Enter Message (Txt)" name = "message" type= "text" handleChange = {handleChange} />
 
                         <div className="h-[1px] w-full bg-gray-400 my-2"/>
                         {false ? (

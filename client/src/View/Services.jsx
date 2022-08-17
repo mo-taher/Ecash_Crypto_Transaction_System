@@ -9,9 +9,9 @@
 
 
 import React from "react";
-import { BsShieldFillCheck } from "react-icons/bs";
-import { BiSearchAlt } from "react-icons/bi";
-import { RiHeart2Fill } from "react-icons/ri";
+import { BsShieldFillCheck, BsShieldFillPlus } from "react-icons/bs";
+import { BiMessageSquareCheck, BiSearchAlt } from "react-icons/bi";
+import { RiHeart2Fill, RiHeart2Line, RiHeartAddLine } from "react-icons/ri";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 ">
@@ -42,21 +42,21 @@ const Services = () => (
       <div className="flex-1 flex flex-col justify-start items-center">
         
         <ServiceCard
-          color="bg-[#8945F8]"
-          title="Optimum currency rates"
-          icon={<BiSearchAlt fontSize={21} className="text-white" />}
+          color="bg-[#f7e305]"
+          title="Optimum Currency Rates"
+          icon={<BiMessageSquareCheck fontSize={21} className="text-black" />}
           subtitle=" You may find much more easily the best Ethereum gas fee prices here. Use low interest rates."
         />
         <ServiceCard
           color="bg-[#F84550]"
-          title="Fastest transactions"
-          icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          title="Fastest Transactions"
+          icon={<RiHeartAddLine fontSize={21} className="text-black" />}
+          subtitle="Security is guaranteed. We always maintain privacy and maintain the quality of our products"
         />
         <ServiceCard
-          color="bg-[#2952E3]"
-          title="Security gurantee"
-          icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
+          color="bg-[#1f9c0e]"
+          title="Security Guarantee"
+          icon={<BsShieldFillPlus fontSize={21} className="text-black" />}
           subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
         />
       </div>
