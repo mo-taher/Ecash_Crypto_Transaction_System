@@ -1,13 +1,3 @@
-// const Services = () => {
-//     return (
-//         <h1>Services</h1>
-//     );
-// }
-
-// export default Services;
-
-
-
 import React from "react";
 import { BsShieldFillCheck, BsShieldFillPlus } from "react-icons/bs";
 import { BiMessageSquareCheck, BiSearchAlt } from "react-icons/bi";
@@ -65,3 +55,14 @@ const Services = () => (
 );
 
 export default Services;
+
+
+
+
+// const Services = () => {
+//     return (
+//         <h1>Services</h1>
+//     );
+// }
+
+// export default Services;

@@ -8,8 +8,8 @@ Smart Contract:
 
 # Notes: 
 ---------
-    Hardhat: Hardhat is an ethereum development environment. It allows to easily deply 
-    contracts, eun tests and debug Solidity code without dealing with live environments.
+    Hardhat: Hardhat is an ethereum development environment. It allows to easily deploy 
+    contracts, run tests and debug Solidity code without dealing with live environments.
 
 2. Installing Toolbox for hardhat test runs:
 -------------------------------------------

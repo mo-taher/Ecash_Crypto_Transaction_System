@@ -8,6 +8,16 @@ import './index.css'
 
 import { TransactionProvider } from '../Controller/TransactionContext';
 
+ReactDOM.render(
+  <TransactionProvider>
+      < React.StrictMode  >
+        < App />
+      </  React.StrictMode  >,
+  </TransactionProvider>,
+
+  document.getElementById('root')
+)
+
 // ReactDOM.createRoot(document.getElementById('root')).render(
   
 //     <React.StrictMode>
@@ -19,13 +29,3 @@ import { TransactionProvider } from '../Controller/TransactionContext';
 
 
 // First Problem occured here
-
-ReactDOM.render(
-  <TransactionProvider>
-      < React.StrictMode  >
-        < App />
-      </  React.StrictMode  >,
-  </TransactionProvider>,
-
-  document.getElementById('root')
-)
