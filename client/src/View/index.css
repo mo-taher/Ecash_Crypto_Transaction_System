@@ -1,8 +1,4 @@
-/* Step 1: First importing this specific font  */
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-
-/* Step 2: Setting up default styling */
 
 * html {
   padding: 0;
@@ -17,7 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Step 03: Importing all the gradients */
 .gradient-bg-welcome {
   background-color:#0f0e13;
   background-image: 
@@ -57,7 +52,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* white glassmorphism */
 .white-glassmorphism {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;

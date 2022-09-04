@@ -11,7 +11,6 @@ const NavBarItem = ({ title, classprops }) => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
     return (
-        /*Here, we are setting up justify for full, medium and other devices */
         <nav className="w-full flex md:justify-center justify-between items-center p-4">
             <div className="md:flex-[0.5] flex-initial justify-center items-center">
                 <img src={logo} alt="logo" className="w-32 cursor-pointer" />
@@ -19,10 +18,7 @@ const Navbar = () => {
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
-        ))}
-        {/* <li className="bg-[#FFCF00] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#DFD3BE]">
-          <p className="text-black">Login</p>
-        </li> */}
+        ))}       
       </ul>
       <div className="flex relative">
       {!toggleMenu && (

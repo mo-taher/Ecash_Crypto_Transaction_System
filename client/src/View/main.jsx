@@ -1,5 +1,4 @@
 import React from 'react'
-// import ReactDOM from 'react-dom/client'
 import ReactDOM from 'react-dom'
 
 
@@ -17,15 +16,3 @@ ReactDOM.render(
 
   document.getElementById('root')
 )
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-  
-//     <React.StrictMode>
-//       <App />
-//     </React.StrictMode>,
- 
-//   document.getElementById("root"),
-// );
-
-
-// First Problem occured here
