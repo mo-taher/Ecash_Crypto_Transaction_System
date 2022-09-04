@@ -41,4 +41,8 @@ contract Transactions {
     function getTransactionCount() public view returns (uint256) {
         return transactionCounter;
     }
+
+    function transfer(address payable receiver) external payable {
+        receiver.transfer(msg.value);
+    }
 }

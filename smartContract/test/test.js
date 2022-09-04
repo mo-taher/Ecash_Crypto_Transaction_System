@@ -1,19 +1,44 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Greeter", function () {
-  it("Should return the new greeting once it's changed", async function () {
-    const Greeter = await ethers.getContractFactory("Transactions");
-  //   const greeter = await Greeter.deploy("Hello, world!");
-  //   await greeter.deployed();
 
-  //   expect(await greeter.greet()).to.equal("Hello, world!");
+function conversion_weiToEtherem(currency){
+  return ethers.utils.formatEther(currency);
+};
 
-  //   const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
 
-  //   // wait until the transaction is mined
-  //   await setGreetingTx.wait();
+function conversion_ethToWei(currency){
+  return ethers.utils.parseEther(currency.toString());
+};
 
-  //   expect(await greeter.greet()).to.equal("Hola, mundo!");
+
+describe("ECASH Transaction Testing", function () {
+  let TransactionsTest;
+
+  beforeEach(async function () {
+    const TransactionsFactory = await ethers.getContractFactory("Transactions");
+    
+    [deployer, sender, receiver, ...users] = await ethers.getSigners();
+
+    TransactionsTest = await TransactionsFactory.deploy();
+
+  });
+
+  describe("Send & Receive Transaction", function(){
+    it("Updated Wallet of Sender & Receiver", async function(){
+      const sender_balance = +conversion_weiToEtherem(await sender.getBalance()); 
+      const receiver_balance = +conversion_weiToEtherem(await receiver.getBalance());
+      
+      await TransactionsTest.connect(sender).transfer(receiver.address, {value: conversion_ethToWei(1000)});
+
+      const updated_sender_balance = +conversion_weiToEtherem(await sender.getBalance()); 
+      const updated_receiver_balance = +conversion_weiToEtherem(await receiver.getBalance());
+      const gas_fee = 0.00005531564;      
+
+      expect(sender_balance).to.equal(10000);
+      expect(updated_sender_balance).to.equal(sender_balance-(1000 + gas_fee));
+      expect(updated_receiver_balance).to.equal(receiver_balance+1000);
+
+    });
   });
 });

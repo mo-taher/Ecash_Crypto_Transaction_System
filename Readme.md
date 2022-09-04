@@ -40,3 +40,8 @@ This is going to be used in out client
 git add .
 git commit -m "message: X feature added"
 git push
+
+
+
+7. 
+
