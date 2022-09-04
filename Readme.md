@@ -35,13 +35,6 @@ This is going to be used in out client
 6. The context folder is for connecting the blockchain (Controller)
 
 
-################## GIT COMMANDS ######################
-
-git add .
-git commit -m "message: X feature added"
-git push
-
-
 View: 
 -----
 1. Index.css ->
@@ -108,4 +101,11 @@ Step 7: Created a describe sub-function which is for testing if the transaction 
 
 Step 8: Now sending 1000 ethers to the receiver and calculated the updated sender balance keeping in mind the gas fee which is deducted.
 
+
+GIT Commands
+------------
+
+1. git add .
+2. git commit -m "message: X feature added"
+3. git push
 
