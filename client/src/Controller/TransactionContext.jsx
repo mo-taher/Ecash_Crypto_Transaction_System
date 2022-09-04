@@ -121,7 +121,7 @@ export const TransactionProvider = ({ children }) => {
                     from: currentAccount,
                     to: addressTo,
                     gas: '0x5280', 
-                    // (0x5280)hex = (21120)dec = 17664 gwei = 0.00002112 ether
+                    // (0x5280)hex = (21120)dec = 17664; gwei = 0.00002112; ether = 0.00000000000002112
                     value: parsedAmount._hex, 
                 }]
             });
